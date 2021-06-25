@@ -3,11 +3,59 @@
 <head>
 <title>Phi vụ bạc tỉ</title>
 <meta charset=UTF-8>
+<link rel=stylesheet type=text/css href=bootstrap.min.css>
+<link rel=stylesheet type=text/css href=bootstrap.css>
+<link href=blog.css rel=stylesheet>
+<script src=bootstrap.min.js type=text/js></script>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
 <style>html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}body{margin:0;min-height:100vh;font-size:1rem;line-height:1.25;background-color:#18222d}.grid{width:100%;max-width:60rem;margin-left:auto;margin-right:auto;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;flex-direction:row;flex-wrap:wrap}.grid-block{width:50%;min-height:11.25rem;padding:1rem}.image-grid{-webkit-perspective:1000px;perspective:1000px}.image-grid .tile-link:hover .tile-img{top:-1rem;left:-1rem}.image-grid .tile-img{position:relative;top:0;left:0;-webkit-transition-property:opacity,top,left,box-shadow;transition-property:opacity,top,left,box-shadow}.tile-link{display:block}.tile-link:hover .tile-img{opacity:1}.tile-link:hover .tile-img-link{display:block}.tile-link:hover .tile-img-link:hover .tile-img{opacity:.5}.tile-img{display:block;width:100%;height:auto;opacity:1;-webkit-transition-property:opacity;transition-property:opacity;-webkit-transition-duration:.125s;transition-duration:.125s;-webkit-transition-timing-function:ease-in;transition-timing-function:ease-in}.tile-link:hover .tile-img1{box-shadow:5px 5px rgba(244,170,200,0.4),10px 10px rgba(244,170,200,0.3),15px 15px rgba(244,170,200,0.2),20px 20px rgba(244,170,200,0.1),25px 25px rgba(244,170,200,0.05)}.tile-link:hover .tile-img2{box-shadow:5px 5px rgba(45,186,233,0.4),10px 10px rgba(45,186,233,0.3),15px 15px rgba(45,186,233,0.2),20px 20px rgba(45,186,233,0.1),25px 25px rgba(45,186,233,0.05)}.tile-link:hover .tile-img3{box-shadow:5px 5px rgba(214,221,244,0.4),10px 10px rgba(214,221,244,0.3),15px 15px rgba(214,221,244,0.2),20px 20px rgba(214,221,244,0.1),25px 25px rgba(214,221,244,0.05)}.tile-link:hover .tile-img4{box-shadow:5px 5px rgba(82,119,192,0.4),10px 10px rgba(82,119,192,0.3),15px 15px rgba(82,119,192,0.2),20px 20px rgba(82,119,192,0.1),25px 25px rgba(82,119,192,0.05)}.tile-link:hover .tile-img5{box-shadow:5px 5px rgba(138,218,245,0.4),10px 10px rgba(138,218,245,0.3),15px 15px rgba(138,218,245,0.2),20px 20px rgba(138,218,245,0.1),25px 25px rgba(138,218,245,0.05)}.tile-link:hover .tile-img6{box-shadow:5px 5px rgba(203,215,193,0.4),10px 10px rgba(203,215,193,0.3),15px 15px rgba(203,215,193,0.2),20px 20px rgba(203,215,193,0.1),25px 25px rgba(203,215,193,0.05)}.tile-link:hover .tile-img7{box-shadow:5px 5px rgba(91,209,250,0.4),10px 10px rgba(91,209,250,0.3),15px 15px rgba(91,209,250,0.2),20px 20px rgba(91,209,250,0.1),25px 25px rgba(91,209,250,0.05)}.tile-link:hover .tile-img8{box-shadow:5px 5px rgba(145,156,196,0.4),10px 10px rgba(145,156,196,0.3),15px 15px rgba(145,156,196,0.2),20px 20px rgba(145,156,196,0.1),25px 25px rgba(145,156,196,0.05)}.tile-link:hover .tile-img9{box-shadow:5px 5px rgba(188,97,129,0.4),10px 10px rgba(188,97,129,0.3),15px 15px rgba(188,97,129,0.2),20px 20px rgba(188,97,129,0.1),25px 25px rgba(188,97,129,0.05)}.tile-link:hover .tile-img10{box-shadow:5px 5px rgba(4,140,231,0.4),10px 10px rgba(4,140,231,0.3),15px 15px rgba(4,140,231,0.2),20px 20px rgba(4,140,231,0.1),25px 25px rgba(4,140,231,0.05)}</style>
 </head>
 <body>
-<button type=button class="btn btn-light" style="position:fixed;z-index:1;background:white;padding:15px;cursor:pointer;margin-top:10%;border:1px solid white;border-radius:45%">
-<a href=index.html#Albums>
+<section id=header>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<div class=container-fluid>
+<a class=navbar-brand href=index.html#Albums>
+<svg xmlns=http://www.w3.org/2000/svg width=30 height=30 fill=currentColor class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+<path fill-rule=evenodd d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+</svg>
+</a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse" id=navbarCollapse>
+<ul class="navbar-nav me-auto mb-2 mb-md-0">
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=tap-the.html>Tập thể</a>
+</li>
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=doi-bong.html>Thể thao</a>
+</li>
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=ki-niem-20-11.html>20/11</a>
+</li>
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=meme-trong-gio-hoc.html>Meme</a>
+</li>
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=#>Phi vụ</a>
+</li>
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=cs-doi-thuong.html>Đời thường</a>
+</li>
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=ngay-ct.html>Ngày chia tay</a>
+</li>
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=phong-hoc.html>Phòng học</a>
+</li>
+<li class=nav-item>
+<a class="nav-link active" aria-current=page href=anh-the.html>Ảnh thẻ</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</section>
 <svg xmlns=http://www.w3.org/2000/svg width=30 height=30 fill=currentColor class="bi bi-house-fill" viewBox="0 0 16 16">
 <path fill-rule=evenodd d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
 <path fill-rule=evenodd d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
