@@ -1,553 +1,242 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>17.20E HHT</title>
-<meta charset=UTF-8>
-<link rel=stylesheet type=text/css href=profile.css>
-<link rel=stylesheet type=text/css href=bootstrap.min.css>
-<link rel=stylesheet type=text/css href=bootstrap.css>
-<link href=blog.css rel=stylesheet>
-<script src=bootstrap.min.js type=text/js></script>
-<meta name=viewport content="width=device-width, initial-scale=1.0">
-<link href=carousel.css rel=stylesheet>
-</head>
-<section id=header>
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-<div class=container-fluid>
-<a class=navbar-brand href=#>
-<svg xmlns=http://www.w3.org/2000/svg width=40 height=40 fill=currentColor class="bi bi-layers-half" viewBox="0 0 16 16">
-<path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
-</svg>&ensp;17.20.E HHT
-</a>
-<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span>
-</button>
-<div class="collapse navbar-collapse" id=navbarCollapse>
-<ul class="navbar-nav me-auto mb-2 mb-md-0">
-<li class=nav-item>
-<a class="nav-link active" aria-current=page href=#><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-</svg>&nbsp;Home</a>
-</li>
-<li class=nav-item>
-<a class="nav-link active" aria-current=page href=#Albums><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-journal-bookmark-fill" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"/>
-  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
-  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
-</svg>&nbsp;Albums</a>
-</li>
-<li class=nav-item>
-<a class="nav-link active" aria-current=page href=#Members><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
-  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-</svg>&nbsp;Chốn dân sự</a>
-</li>
-<li class=nav-item>
-<a class="nav-link active" aria-current=page href=#Blogs><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-rss" viewBox="0 0 16 16">
-  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-  <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1z"/>
-</svg>&nbsp;Bốc phét channel</a>
-</li>
-<li class=nav-item>
-<a class="nav-link active" aria-current=page href=#About><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
-  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-  <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-</svg>&nbsp;Contact</a>
-</li>
-</ul>
-</div>
-</div>
-</nav>
-</section>
-<section id=carousel>
-          <hr>
-<div id=myCarousel class="carousel slide" data-bs-ride=carousel>
-<div class=carousel-indicators>
-<button type=button data-bs-target=#myCarousel data-bs-slide-to=0 class=active aria-current=true aria-label="Slide 1"></button>
-<button type=button data-bs-target=#myCarousel data-bs-slide-to=1 aria-label="Slide 2"></button>
-<button type=button data-bs-target=#myCarousel data-bs-slide-to=2 aria-label="Slide 3"></button>
-</div>
-<div class=carousel-inner>
-<div class="carousel-item active">
-<svg class=bd-placeholder-img width=100% height=100% xmlns=http://www.w3.org/2000/svg aria-hidden=true preserveAspectRatio="xMidYMid slice" focusable=false><rect width=100% height=100% fill="#777"/></svg>
-<img src=carousel1.jpeg class="d-block w-100" alt="Click to see">
-<div class=container>
-<div class="carousel-caption text-start">
-<h1>Thanh xuân năm ấy chúng ta gặp nhau </h1>
-<p>Thật là khó để tìm những người bạn tốt, càng khó hơn khi phải chia tay họ và đó là những người mà ta không bao giờ có thể quên.</p>
-</div>
-</div>
-</div>
-<div class=carousel-item>
-<svg class=bd-placeholder-img width=100% height=100% xmlns=http://www.w3.org/2000/svg aria-hidden=true preserveAspectRatio="xMidYMid slice" focusable=false><rect width=100% height=100% fill="#777"/></svg>
-<img src=carousel2.jpeg class="d-block w-100" alt="Click to see">
-<div class=container>
-<div class=carousel-caption>
-<h1>Tháng 9 năm nay</h1>
-<p>Căn phòng đó lại đầy ắp những người ngồi nghe giảng. Nhưng tiếc rằng, đó không còn là chúng ta</p><br/>
-</div>
-</div>
-</div>
-<div class=carousel-item>
-<svg class=bd-placeholder-img width=100% height=100% xmlns=http://www.w3.org/2000/svg aria-hidden=true preserveAspectRatio="xMidYMid slice" focusable=false><rect width=100% height=100% fill="#777"/></svg>
-<img src=carousel3.jpeg class="d-block w-100" alt="Click to see">
-<div class=container>
-<div class="carousel-caption text-end">
-<h1>Ai trong chúng ta cũng đi qua một thời áo trắng! </h1>
-<p>Đến khi bôn ba giữa cuộc đời muôn sự đa đoan mới biết những ngày ấy thuần thiết vô cùng.</p>
-</div>
-</div>
-</div>
-</div>
-<button class=carousel-control-prev type=button data-bs-target=#myCarousel data-bs-slide=prev>
-<span class=carousel-control-prev-icon aria-hidden=true></span>
-<span class=visually-hidden>Previous</span>
-</button>
-<button class=carousel-control-next type=button data-bs-target=#myCarousel data-bs-slide=next>
-<span class=carousel-control-next-icon aria-hidden=true></span>
-<span class=visually-hidden>Next</span>
-</button>
-</div>
-<script src=bootstrap.bundle.min.js></script>
-</section>
-<section id=Albums>
-<hr><hr>
-<section class="py-5 text-center container">
-<div class="row py-lg-5">
-<div class="col-lg-6 col-md-8 mx-auto">
-<h1 class=fw-light>Đôi khi các bạn có thể quên đi</h1>
-<p class="lead text-muted">Những kỉ niệm giữa chúng ta</p>
-<p class="lead text-muted">Cùng nhau ôn lại nhé!
-<svg xmlns=http://www.w3.org/2000/svg width=25 height=25 fill=currentColor class="bi bi-emoji-wink" viewBox="0 0 16 16">
-<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-<path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z"/>
-</svg>
-</p>
-</div>
-</div>
-</section>
-<div class="album py-5 bg-light">
-<div class=container>
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-<div class=col>
-<div class="card shadow-sm" >
-<img src=we_2.jpg class="d-block w-100" alt="Click to see">
-<div class=card-body>
-<p class=card-text>Chúng ta nè</p>
-<div class="d-flex justify-content-between align-items-center">
-<div class=btn-group>
-<button type=button class="btn btn-sm btn-outline-secondary"><a href=tap-the.html style=text-decoration:none;color:#6c757d>View</a></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=col>
-<div class="card shadow-sm">
-<img src=bong29.jpg class="d-block w-100" alt="Click to see">
-<div class=card-body>
-<p class=card-text>Muốn khỏe đẹp hãy tập thể thao</p>
-<div class="d-flex justify-content-between align-items-center">
-<div class=btn-group>
-<button type=button class="btn btn-sm btn-outline-secondary"><a href=doi-bong.html style=text-decoration:none;color:#6c757d>View</a></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=col>
-<div class="card shadow-sm">
-<img src=kn2011_7.jpg class="d-block w-100" alt="Click to see">
-<div class=card-body>
-<p class=card-text>20/11 hằng năm</p>
-<div class="d-flex justify-content-between align-items-center">
-<div class=btn-group>
-<button type=button class="btn btn-sm btn-outline-secondary"><a href=ki-niem-20-11.html style=text-decoration:none;color:#6c757d>View</a></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=col>
-<div class="card shadow-sm">
-<img src=meme_23.jpg class="d-block w-100" alt="Click to see">
-<div class=card-body>
-<p class=card-text>Meme trong giờ học</p>
-<div class="d-flex justify-content-between align-items-center">
-<div class=btn-group>
-<button type=button class="btn btn-sm btn-outline-secondary"><a href=meme-trong-gio-hoc.html style=text-decoration:none;color:#6c757d>View</a></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=col>
-<div class="card shadow-sm">
-<img src=pv_10.jpg class="d-block w-100" alt="Click to see">
-<div class=card-body>
-<p class=card-text>Phi vụ bạc tỉ</p>
-<div class="d-flex justify-content-between align-items-center">
-<div class=btn-group>
-<button type=button class="btn btn-sm btn-outline-secondary"><a href=phi-vu-db.html style=text-decoration:none;color:#6c757d>View</a></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=col>
-<div class="card shadow-sm">
-<img src=cs_6.jpg class="d-block w-100" alt="Click to see">
-<div class=card-body>
-<p class=card-text>Cuộc sống đời thường</p>
-<div class="d-flex justify-content-between align-items-center">
-<div class=btn-group>
-<button type=button class="btn btn-sm btn-outline-secondary"><a href=cs-doi-thuong.html style=text-decoration:none;color:#6c757d>View</a></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=col>
-<div class="card shadow-sm">
-<img src=ngaycc_2.jpeg class="d-block w-100" alt="Click to see">
-<div class=card-body>
-<p class=card-text>Cùng trở về ngày chia tay</p>
-<div class="d-flex justify-content-between align-items-center">
-<div class=btn-group>
-<button type=button class="btn btn-sm btn-outline-secondary"><a href=ngay-ct.html style=text-decoration:none;color:#6c757d>View</a></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=col>
-<div class="card shadow-sm">
-<img src=phong_1.jpeg class="d-block w-100" alt="Click to see">
-<div class=card-body>
-<p class=card-text>Nơi mình đã đi qua</p>
-<div class="d-flex justify-content-between align-items-center">
-<div class=btn-group>
-<button type=button class="btn btn-sm btn-outline-secondary"><a href=phong-hoc.html style=text-decoration:none;color:#6c757d>View</a></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=col>
-<div class="card shadow-sm">
-<img src=the_1.jpg class="d-block w-100" alt="Click to see">
-<div class=card-body>
-<p class=card-text>Ảnh thẻ của mí bạn</p>
-<div class="d-flex justify-content-between align-items-center">
-<div class=btn-group>
-<button type=button class="btn btn-sm btn-outline-secondary"><a href=anh-the.html style=text-decoration:none;color:#6c757d>View</a></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id=Members>
-<hr><hr>
-<section class="py-5 text-center container">
-<div class="row py-lg-5">
-<div class="col-lg-6 col-md-8 mx-auto">
-<h1 class=fw-light>Nào nào!</h1>
-<p class="lead text-muted">Lớp mình gồm ai nhỉ?</p>
-<p class="lead text-muted">Xem lại nào
-<svg xmlns=http://www.w3.org/2000/svg width=30 height=30 fill=currentColor class="bi bi-emoji-expressionless" viewBox="0 0 16 16">
-<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-<path d="M4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm5 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-</svg>
-</p>
-</div>
-</div>
-</section>
-<div class="container marketing" style="font-family:'Times New Roman',Times,serif">
-<div class=row>
-<div class=col-lg-4>
-<img src=kieu-ngoc-hai.jpg style=border-radius:50%;width:140px;height:140px>
-<h4>Kiều Ngọc Hải</h4>
-<h5>Trưởng soái</h5>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=huyentrang.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Thị Huyền Trang</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=tuyetngan.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Trần Thị Tuyết Ngân</h4>
-<p></p>
-</div>
-</div>
-<div class=row>
-<div class=col-lg-4>
-<img src=ngoclan.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Lê Thị Ngọc Lan</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=thanhan.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Phan Thị Thanh An</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=chau.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Đào Công Châu</h4>
-<p></p>
-</div>
-</div>
-<div class=row>
-<div class=col-lg-4>
-<img src=danh.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Công Danh</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=dunga.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Thị Thùy Dung </h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=dungb.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Thị Thùy Dung </h4>
-<p></p>
-</div>
-</div>
-<div class=row>
-<div class=col-lg-4>
-<img src=dungc.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Trần Lê Thùy Dung</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=duc.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Lê Trung Đức</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=giang.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Thị Hương Giang</h4>
-<p></p>
-</div>
-</div>
-<div class=row>
-<div class=col-lg-4>
-<img src=ha.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Trần Thị Thu Hà</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=hien.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Võ Minh Hiển</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=huong.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Võ Văn Hưởng</h4>
-<p></p>
-</div>
-</div>
-<div class=row>
-<div class=col-lg-4>
-<img src=hieu.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Văn Hiếu</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=hiep.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Thái Hiệp</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=huyen.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Thị Huyền</h4>
-<p></p>
-</div>
-</div>
-<div class=row>
-<div class=col-lg-4>
-<img src=thao.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Võ Thị Thảo</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=ngoctrang.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Ngọc Trang</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=ngoc.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Thị Bảo Ngọc</h4>
-<p></p>
-</div>
-</div>
-<div class=row>
-<div class=col-lg-4>
-<img src=phong.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Bùi Văn Phong</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=vthuan.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Văn Thuận</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=loan.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Thị Loan</h4>
-<p></p>
-</div>
-</div>
-<div class=row>
-<div class=col-lg-4>
-<img src=thong.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Mai Tuấn Thông</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=nam.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Văn Năm</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=vnguyen.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Văn Nguyên</h4>
-<p></p>
-</div>
-</div>
-<div class=row>
-<div class=col-lg-4>
-<img src=nnguyen.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Nhật Nguyên</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=thu.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Thị Quỳnh Phương</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=phuong.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Hoàng Thị Mai Phương</h4>
-<p></p>
-</div>
-</div>
-<div class=row>
-<div class=col-lg-4>
-<img src=thuy.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Thị Thúy</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=tvnam.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Trần Văn Nam</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=thuan.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Ngô Đình Thuận</h4>
-<p></p>
-</div>
-</div>
-<div class=row>
-<div class=col-lg-4>
-<img src=loi.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Văn Lợi</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=nga.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Nguyễn Thị Nga</h4>
-<p></p>
-</div>
-<div class=col-lg-4>
-<img src=thanh.PNG style=border-radius:50%;width:140px;height:140px>
-<h4>Trần Hữu Thành</h4>
-<p></p>
-</div>
-</div>
-</section>
-<section id=Blogs>
-<hr><hr>
-<section class="py-5 text-center container">
-<div class="row py-lg-5">
-<div class="col-lg-6 col-md-8 mx-auto">
-<h1 class=fw-light>Gòy</h1>
-<p class="lead text-muted">Có drama gì?</p>
-<p class="lead text-muted">Kể xem
-<svg xmlns=http://www.w3.org/2000/svg width=30 height=30 fill=currentColor class="bi bi-emoji-expressionless" viewBox="0 0 16 16">
-<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-<path d="M4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm5 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
-</svg>
-</p>
-</div>
-</div>
-</section>
-<main class=container>
-<div class="row mb-2">
-<div class=col-md-6>
-<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-<div class="col p-4 d-flex flex-column position-static">
-<strong class="d-inline-block mb-2 text-primary">Thông báo</strong>
-<h3 class=mb-0>Story-teller</h3>
-<div class="mb-1 text-muted">Trời ơi cái quần què gì ở đây???</div>
-<p class="card-text mb-auto">Nếu bạn nhớ lại chuyện gì vui, hãy méc lại nhé.</p>
-<a href=https://forms.gle/TFbuEUB4yyYgVTUJA class=stretched-link>Truy cập vào đây</a>
-</div>
-<div class="col-auto d-none d-lg-block">
-<svg class=bd-placeholder-img width=200 height=250 xmlns=http://www.w3.org/2000/svg role=img aria-label="Placeholder: ..." preserveAspectRatio="xMidYMid slice" focusable=false><title>Placeholder</title><rect width=100% height=100% fill="#55595c"/><text x=50% y=50% fill=#eceeef dy=.3em>Thumbnail</text></svg>
-</div>
-</div>
-</div>
-<div class=col-md-6>
-<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-<div class="col p-4 d-flex flex-column position-static">
-<strong class="d-inline-block mb-2 text-success">Design</strong>
-<h3 class=mb-0>Ủng hộ</h3>
-<div class="mb-1 text-muted">Làm cái động ảnh thêm khủng nào!</div>
-<p class=mb-auto>Đừng giữ khư khư ảnh, quăng lên đi...</p>
-<a href="https://drive.google.com/drive/folders/1Yn1qgj3-ni7NwRhRK4J1qcTsiBeWRTiT?usp=sharing" class=stretched-link>Quăng đây nè</a>
-</div>
-<div class="col-auto d-none d-lg-block">
-<svg class=bd-placeholder-img width=200 height=250 xmlns=http://www.w3.org/2000/svg role=img aria-label=Placeholder:... preserveAspectRatio="xMidYMid slice" focusable=false><title>Placeholder</title><rect width=100% height=100% fill="#55595c"/><text x=50% y=50% fill=#eceeef dy=.3em>Thumbnail</text></svg>
-</div>
-</div>
-</div>
-</div>
-</main>
-</section>
-<footer id="About">
-<hr>
-<p class=float-end><a href=#>Back to top</a></p>
-<p>&copy; Founder: NGUYEN THI THUY DUNG - 2021 - </p>
-<a href="https://www.facebook.com/dng.thy/" style="text-decoration:none ; color: black">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-        </svg>
-</a>
-<a href="https://www.instagram.com/_dng.thy_" style="text-decoration:none ; color: black">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                  </svg>
-</a>
-<a href="mailto:white.fox.5012@gmail.com" style="text-decoration:none ; color: black">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-mailbox2" viewBox="0 0 16 16">
-                    <path d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9v1z"/>
-                    <path d="M12 3H4a4 4 0 0 0-4 4v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a4 4 0 0 0-4-4zM8 7a3.99 3.99 0 0 0-1.354-3H12a3 3 0 0 1 3 3v6H8V7zm-3.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0c0 .334-.164.264-.415.157z"/>
-                  </svg>
-</a>
-<a href="tel:0903458706" style="text-decoration:none ; color: black">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                  </svg>
-</a>
-</footer>
-</body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- 
+        Awesome Template
+        http://www.templatemo.com/preview/templatemo_450_awesome
+        -->
+		<title>17.20.E</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/templatemo-style.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/custom.js"></script>
+	</head>
+	<body id="top">
+
+		<!-- start preloader -->
+		<div class="preloader">
+			<div class="sk-spinner sk-spinner-wave">
+     	 		<div class="sk-rect1"></div>
+       			<div class="sk-rect2"></div>
+       			<div class="sk-rect3"></div>
+      	 		<div class="sk-rect4"></div>
+      			<div class="sk-rect5"></div>
+     		</div>
+    	</div>
+    	<!-- end preloader -->
+    	<!-- start navigation -->
+		<nav class="navbar navbar-default templatemo-nav" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+						<span class="icon icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand" style="OVERFLOW:HIDDEN">17.20.E</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#top">HOME</a></li>
+						<li><a href="#about">ALBUM</a></li>
+						<li><a href="#team">CHỐN DÂN SỰ</a></li>
+						<li><a href="#service">BỐC PHÉT CHANNEL</a></li>
+						<li><a href="#contact">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- end navigation -->
+
+    	<!-- start home -->
+    	<section id="home">
+    		<div class="container" >
+    			<div class="row">
+    				<div class="col-md-offset-2 col-md-8">
+    					<h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="2.2s"><span>Thanh xuân</span>năm ấy chúng ta gặp nhau </h1>
+    					<div class="element">
+                            <div class="sub-element">Thật là khó để tìm những người bạn tốt</div>
+                            <div class="sub-element">Càng khó hơn khi phải chia tay họ </div>
+                            <div class="sub-element">Và đó là những người mà ta không bao giờ có thể quên.</div>
+							
+                        </div>
+    					<a data-scroll href="#about" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">GET STARTED</a>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end home -->
+
+    	<!-- start about -->
+		<section id="about" >
+			<div class="container" >
+				<div class="row">
+					<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">KHOẢNG THỜI GIAN BÊN NHAU <span>THẬT TUYỆT</span></h2>
+    				</div>		
+					<div class="container" id="container-link">
+						<a data-scroll href="tap-the.html" class="btn btn-default wow fadeInUp" style="margin-left:43%;margin-bottom:2%;"data-wow-offset="50" data-wow-delay="0.6s">GO TO GALLERY</a><br/>			
+					</div>
+					<script>
+						var t=["TẬP THỂ",'CUỘC SỐNG ĐỜI THƯỜNG','ĐỘI BÓNG','KỈ NIỆM 20/11','ẢNH THẺ','MEME TRONG GIỜ HỌC','NGÀY CHIA TAY','NHỮNG PHI VỤ ĐẶC BIỆT','PHÒNG HỌC'];
+						var l=['tap-the.html','cs-doi-thuong.html','doi-bong.html','ki-niem-20-11.html','anh-the.html','meme-trong-gio-hoc.html','ngay-ct.html','phi-vu-db.html','phong-hoc.html'];
+						var im=['we/we_2.jpg','cs/cs_60.jpg','bong/bong29.jpg','kn2011/kn2011_7.jpg','the/the.jpg','meme/meme_23.jpg','ngaycc/ngaycc.jpg','pv/pv.jpg','phong/phong_1.jpg'];
+						function createLink(){
+							for (var i=0;i<t.length;i++){
+								var ti;
+								if (i%2==0) ti=1; else ti=0.7;
+								var html='<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="'+ti+'s">'+
+								'<div class="portfolio-thumb">'+
+								   '<img src="'+im[i]+'" class="img-responsive" alt="'+t[i]+'">'+
+										'<div class="portfolio-overlay">'+
+											'<h4><a href="'+l[i]+'">'+t[i]+'</a></h4>'+
+											'<p></p>'+
+										'</div>'+
+								'</div>'+
+							'</div>';
+						document.getElementById('container-link').insertAdjacentHTML('beforeend', html);
+							}
+						}
+						var done=createLink();
+		
+					</script>
+				</div>
+			</div>
+		</section>
+		<!-- end about -->
+
+    	<!-- start team -->
+    	<section id="team">
+    		<div class="container" id="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>AWESOME</span> TEAM</h2>
+    				</div>
+    			</div>
+    		</div>
+			<script>
+				function createMember(){
+					var a=["KIỀU NGỌC HẢI",'NG T HUYỀN TRANG','TRẦN THỊ TUYẾT NGÂN','LÊ THỊ NGỌC LAN','NG THỊ THÙY DUNG','TRẦN THỊ THU HÀ','PHAN THỊ NGỌC MINH','NGUYỄN NGỌC TRANG','NGUYỄN THỊ NGA','PHAN THỊ THANH AN'
+					,'ĐÀO CÔNG CHÂU','NGUYỄN CÔNG DANH','NG THỊ THÙY DUNG','TRẦN LÊ THÙY DUNG','LÊ TRUNG ĐỨC','NG T HƯƠNG GIANG','VÕ MINH HIỂN','VÕ VĂN HƯỞNG','NGUYỄN VĂN HIẾU','NGUYỄN THÁI HIỆP','NGUYỄN THỊ HUYỀN','VÕ THỊ THẢO','NGUYỄN T BẢO NGỌC','BÙI VĂN PHONG','NGUYỄN VĂN THUẬN','NGUYỄN THỊ LOAN','MAI TUẤN THÔNG','NGUYỄN VĂN NĂM','NGUYỄN VĂN NGUYÊN','NG T QUỲNH PHƯƠNG'
+					,'HOÀNG T MAI PHƯƠNG','NGUYỄN THỊ THÚY','TRẦN VĂN NAM','NGÔ ĐÌNH THUẬN','NGUYỄN VĂN LỢI','TRẦN HỮU THÀNH','TRẦN ĐỨC THẮNG'];
+					var b=["Trưởng soái",'Lớp trưởng','Bí Thư','Lớp phó văn thể','Lớp phó học tập','Tổ Trưởng Tổ 1','Tổ Trưởng Tổ 2','Tổ Trưởng Tổ 4','Tổ Trưởng Tổ 3'];
+					var qu=["Lệ Ninh",'Lệ Ninh','Hoa Thủy','Sơn Thủy','Hoa Thủy','Vạn Ninh','Hoa Thủy','Sơn Thủy','Hoa Thủy','Sơn Thủy'
+					,'Sơn Thủy','Hoa Thủy','Sơn Thủy','Phú Thủy','Lệ Ninh','Hoa Thủy','Sơn Thủy','Sơn Thủy','Phú Thủy','Sơn Thủy','Hoa Thủy','Sơn Thủy','Vạn Ninh','Hoa Thủy','Hoa Thủy','NGUYỄN THỊ LOAN','Sơn Thủy','NGUYỄN VĂN NĂM','Hoa Thủy','Hoa Thủy'
+					,'Sơn Thủy','Hoa Thủy','TRẦN VĂN NAM','Lệ Ninh','Hoa Thủy','Hoa Thủy','Lệ Ninh'];
+					var sn=["06/05/1980",'12/10/2002','04/04/2002','01/01/2002','20/07/2002','TRẦN THỊ THU HÀ','17/09/2002','28/01/2002','NGUYỄN THỊ NGA','22/07/2002'
+					,'ĐÀO CÔNG CHÂU','27/09/2002','11/08/2002','15/02/2002','LÊ TRUNG ĐỨC','NG T HƯƠNG GIANG','20/08/2002','25/02/2002','10/07/2002','21/08/2002','14/04/2002','18/05/2002','NGUYỄN T BẢO NGỌC','26/07/2002','NGUYỄN VĂN THUẬN','04/12/2002','01/01/2002','22/12/2002','02/09/2002','NG T QUỲNH PHƯƠNG'
+					,'30/09/2002','10/06/2002','TRẦN VĂN NAM','19/08/2002','20/05/2002','01/04/2002','22/04/2002'];
+					for (var i=0;i<a.length;i++){
+						var c="";
+						if (i+1<=b.length) c=b[i]; else c="Thành viên"
+						html='<div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">'+
+    					'<div class="team-wrapper">'+
+    							'<div class="team-des">'+
+    								'<h4>'+a[i]+'</h4>'+
+    								'<span>'+c+'</span>'+
+    								'<p>'+sn[i]+'</p><br/>'+
+									'<p>'+qu[i]+'</p><br/>'+
+    							'</div>'+
+    					'</div>'+
+    				'</div>';
+					document.getElementById('container').insertAdjacentHTML('beforeend', html);
+					}
+				}
+				var done=createMember();
+				</script>
+    	</section>
+    	<!-- end team -->
+
+    	<!-- start service -->
+    	<section id="service">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"> <span>BỐC PHÉT</span> CHANNEL</h2>
+    				</div>
+    				<div class="col-md-4 wow fadeIn" style="margin-left:20%"data-wow-offset="50" data-wow-delay="0.6s">
+    					<i class="fa fa-laptop"></i>
+    					<h4><a href="https://forms.gle/TFbuEUB4yyYgVTUJA">Storry-teller</a></h4>
+    					<p>Nếu bạn nhớ lại chuyện gì vui, hãy chia sẻ nhé</p>
+    				</div>
+    				<div class="col-md-4 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
+    					<i class="fa fa-cloud"></i>
+    					<h4><a href="https://drive.google.com/drive/folders/1Yn1qgj3-ni7NwRhRK4J1qcTsiBeWRTiT?usp=sharing">Ủng hộ</a></h4>
+    					<p>Đừng giữ khư khư ảnh, quăng lên đi</p>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end servie -->
+
+
+
+    	<!-- start contact -->
+    	<section id="contact">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-md-12">
+    					<h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>THUY DUNG</span></h2>
+    				</div>
+    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
+    					<form action="#" method="post">
+    						<label>NAME</label>
+    						<input name="fullname" type="text" class="form-control" id="fullname">
+   						  	
+                            <label>EMAIL</label>
+    						<input name="email" type="email" class="form-control" id="email">
+   						  	
+                            <label>MESSAGE</label>
+    						<textarea name="message" rows="4" class="form-control" id="message"></textarea>
+    						
+                            <input type="submit" class="form-control">
+    					</form>
+    				</div>
+    				<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
+    					<address>
+    						<p class="address-title">THANKS</p>
+    						<span>Hi vọng mang lại niềm vui cho các bạn</span>
+    						<p><i class="fa fa-phone"></i> (+84) 90-345-8706</p>
+    						<p><i class="fa fa-envelope-o"></i> dungnttde160234@fpt.edu.vn</p>
+    						<p><i class="fa fa-map-marker"></i> Hoa Hai Ward, Ngu Hanh Son Dist, Da Nang, Viet Nam</p>
+    					</address>
+    					<ul class="social-icon">
+    						<li><h4>WE ARE SOCIAL</h4></li>
+    						<li><a href="www.facebook.com/dng.thy" class="fa fa-facebook"></a></li>
+    						<li><a href="#" class="fa fa-twitter"></a></li>
+    						<li><a href="www.instagram.com/_dng.thy_" class="fa fa-instagram"></a></li>
+    					</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+    	<!-- end contact -->
+
+        <!-- start copyright -->
+        <footer id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
+                       	Copyright &copy; 2021 dng.thy</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end copyright -->
+
+	</body>
 </html>
